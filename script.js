@@ -1,0 +1,1 @@
+// Archivo vacío. Agrega aquí tu código JavaScript
