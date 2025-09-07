@@ -70,6 +70,17 @@ body {
         flex-direction: column;
         gap: 10px;
     }
+    .navbar a {
+        font-size: 1.3rem;
+        padding: 8px 12px;
+    }
+    .h1 {
+        font-size: 2.2rem;
+        margin-bottom: 6px;
+    }
+    .header {
+        padding: 10px 0;
+    }
 }
 
 /* SECTION MAIN */
@@ -162,11 +173,13 @@ body {
     margin-left: 25px;
 }
 
-.section__guitarras {
-    display: flex;
-    flex-wrap: wrap;
+
+.section__guitarras,
+.section__ampli {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    justify-content: center;
+    justify-items: center;
     padding: 24px 8px;
 }
 
@@ -287,7 +300,7 @@ body {
 @media (max-width: 600px) {
     .section__guitarras,
     .section__ampli {
-        flex-direction: column;
+        grid-template-columns: 1fr;
         gap: 16px;
         padding: 12px 2px;
     }
@@ -299,14 +312,36 @@ body {
     }
     .guitarra__venta img,
     .ampli__venta img {
-        max-width: 95vw;
+        max-width: 320px;
+        width: 90vw;
+        margin-bottom: 18px;
+        margin-top: 8px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
     }
     .h3 {
         font-size: 1.1rem;
         text-align: center;
+        margin-bottom: 12px;
     }
     .precio1 p {
         font-size: 1rem;
+    }
+    .productos {
+        margin-bottom: 18px;
+    }
+    .section__linea img,
+    .section__lineaamp img {
+        max-width: 220px;
+        width: 80vw;
+        margin-bottom: 14px;
+        margin-top: 8px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
     }
     .carro-contenido {
         padding: 12px 2px;
